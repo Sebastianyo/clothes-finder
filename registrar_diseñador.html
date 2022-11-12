@@ -1,0 +1,230 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRAR</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- navbar barra buscadora login y demas -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CLOTHES FINDER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              MUJER
+            </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PRENDAS DE CUERO</a></li>
+                            <li><a class="dropdown-item" href="#">CHAQUETAS</a></li>
+                            <li><a class="dropdown-item" href="#">BUZOS</a></li>
+                            <li><a class="dropdown-item" href="#">CAMISAS</a></li>
+                            <li><a class="dropdown-item" href="#">JEANS Y PANTALONES</a></li>
+                            <li><a class="dropdown-item" href="#">FALDAS Y VESTIDOS</a></li>
+                            <li><a class="dropdown-item" href="#">CAMISETAS</a></li>
+                            <li><a class="dropdown-item" href="#">BUFANDAS</a></li>
+                            <li><a class="dropdown-item" href="#">SHORTS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">VER TODO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            HOMBRE
+          </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PRENDAS DE CUERO</a></li>
+                            <li><a class="dropdown-item" href="#">CAMISETAS Y POLOS</a></li>
+                            <li><a class="dropdown-item" href="#">CHAQUETAS</a></li>
+                            <li><a class="dropdown-item" href="#">CAMISAS</a></li>
+                            <li><a class="dropdown-item" href="#">JEANS Y PANTALONES</a></li>
+                            <li><a class="dropdown-item" href="#">BERMUDAS</a></li>
+                            <li><a class="dropdown-item" href="#">BUZOS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">VER TODO</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav justify-content-end">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">iniciar sesion</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="register_user_dise.html">registrar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="container">
+                            <a class="nav-link active" aria-current="page" href="index.html"> <i class="bi bi-cart"> CARRITO </i> </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="btn-group dropstart">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> 
+                            <i class="bi bi-person"></i>Mi Usuario
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="perfil.html"> Mi Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- FIN DEL NAVEGADOR -->
+
+    <section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-sm-center h-100">
+				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+					<div class="text-center my-5">
+						<img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="logo" width="100">
+					</div>
+					<div class="card shadow-lg">
+						<div class="card-body p-5">
+							<h1 class="fs-4 card-title fw-bold mb-4">REGISTRAR</h1>
+							<form method="POST" class="needs-validation" novalidate="" autocomplete="off"> 
+                                <!-- CASILLA DE NOMBRE-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="name">NOMBRE</label>
+									<input id="name" type="text" class="form-control" name="nombre" value="" required autofocus>
+									<div class="invalid-feedback">
+									</div>
+								</div>
+
+                                <!-- CASILLA DE APELLIDOS-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="name">APELLIDO</label>
+									<input id="name" type="text" class="form-control" name="apellido" value="" required autofocus>
+									<div class="invalid-feedback">
+									</div>
+								</div>
+
+                                 <!-- CASILLA DE NUMERO DE TELEFONO-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="name">NUMERO DE TELEFONO</label>
+									<input id="name" type="number" class="form-control" name="numero_telefono" value="" required autofocus>
+									<div class="invalid-feedback">
+									</div>
+								</div>
+
+                                <!-- CASILLA DE TIPO DE DOCUMENTO-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="name">TIPO DE DOCUMENTO</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>SELECCIONE UNO</option>
+                                        <option value="1">CEDULA</option>
+                                        <option value="2">TARJETA DE INDENTIDAD</option>
+                                        <option value="3">CEDULA DE EXTRAJERIA</option>
+                                      </select>
+									<div class="invalid-feedback">
+									</div>
+								</div>
+
+                                 <!-- CASILLA DE NUMERO DE DOCUMENTO-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="name">NUMERO DE DOCUMENTO</label>
+									<input id="name" type="number" class="form-control" name="numero_de_documento" value="" required autofocus>
+									<div class="invalid-feedback">
+									</div>
+								</div>
+
+                                  <!--CASILLA DE DIRECCION-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="email">DIRECCION</label>
+									<input id="text" type="email" class="form-control" name="direccion" value="" required>
+                                    <div class="invalid-feedback">
+										
+									</div>
+								</div>
+                                
+
+                        
+                                <!--CASILLA DE CORREO ELECTRONICO-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="email">CORREO ELECTRONICO--</label>
+									<input id="email" type="email" class="form-control" name="email" value="" required>
+									<div class="invalid-feedback">
+										Email is invalid
+									</div>
+								</div>
+                                <!--CASILLA DE CONTRASEÑA-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="password">CONTRASEÑA</label>
+									<input id="password" type="password" class="form-control" name="password" required>
+								    <div class="invalid-feedback">
+								    	Password is required
+							    	</div>
+								</div>
+                                 <!-- CASILLA DE GENEROS-->
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="hombre" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">HOMBRE</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="mujer" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">MUJER</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="otros" value="option3" >
+                                    <label class="form-check-label" for="inlineCheckbox3">OTROS</label>
+                                  </div>
+
+
+								<p class="form-text text-muted mb-3">
+									
+								</p>
+
+								<div class="align-items-center d-flex">
+									<button type="submit" class="btn btn-primary ms-auto">
+										REGISTRAR	
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="card-footer py-3 border-0">
+							<div class="text-center">
+								YA TIENE CUENTA? <a href="index.html" class="text-dark">INICIAR SESION</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/login.js"></script>
+
+</body>
+
+</html>
