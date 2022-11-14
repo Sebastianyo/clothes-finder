@@ -1,0 +1,370 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHES FINDER</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- navbar barra buscadora login y demas -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <!-- logo de la pagina -->
+            <a class="navbar-brand" href="#">CLOTHES FINDER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!-- prendas de mujer -->
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              MUJER
+            </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PRENDAS DE CUERO</a></li>
+                            <li><a class="dropdown-item" href="#">CHAQUETAS</a></li>
+                            <li><a class="dropdown-item" href="#">BUZOS</a></li>
+                            <li><a class="dropdown-item" href="#">CAMISAS</a></li>
+                            <li><a class="dropdown-item" href="#">JEANS Y PANTALONES</a></li>
+                            <li><a class="dropdown-item" href="#">FALDAS Y VESTIDOS</a></li>
+                            <li><a class="dropdown-item" href="#">CAMISETAS</a></li>
+                            <li><a class="dropdown-item" href="#">BUFANDAS</a></li>
+                            <li><a class="dropdown-item" href="#">SHORTS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">VER TODO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!-- prendas de hombre -->
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            HOMBRE
+          </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PRENDAS DE CUERO</a></li>
+                            <li><a class="dropdown-item" href="#">CAMISETAS Y POLOS</a></li>
+                            <li><a class="dropdown-item" href="#">CHAQUETAS</a></li>
+                            <li><a class="dropdown-item" href="#">CAMISAS</a></li>
+                            <li><a class="dropdown-item" href="#">JEANS Y PANTALONES</a></li>
+                            <li><a class="dropdown-item" href="#">BERMUDAS</a></li>
+                            <li><a class="dropdown-item" href="#">BUZOS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">VER TODO</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav justify-content-end">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">INICIAR SESION</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">REGISTRAR</a> 
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="container">
+                            <a class="nav-link active" aria-current="page" href="index.html"> <i class="bi bi-cart"> CARRITO </i> </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="btn-group dropstart">
+                            <!-- perfil -->
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> 
+                            <i class="bi bi-person"></i>MI USUARIO
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="perfil.html"> Mi Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- FIN DEL NAVEGADOR -->
+
+    <!-- carrusel de imagenes que aparece al inicio -->
+
+    <div class="container">
+        <br>
+        <br>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- contenedor con un grupo de cartas que muestran unos productos especificos -->
+
+    <!-- contenedor, centra todo lo que tiene dentro y deja una margen con los cordes de la pantalla -->
+    <div class="container">
+        <h5>promocion</h5>
+        <!-- grupo de 3 cartas por linea -->
+        <div class="card-group">
+            <!-- cartas individuales -->
+            <div class="card">
+                <!-- imagen -->
+                <img src="..." class="card-img-top" alt="...">
+                <!-- separador entre imagen y nombre del producto -->
+                <div class="card-body">
+                    <!-- nombre del producto -->
+                    <h5 class="card-title">Nombre de la prenda</h5>
+                    <!-- separador entre el nombre y los botones -->
+                    <div class="container">
+                        <p class="card-text">
+                            <!-- botones -->
+                            <button>compra rapida</button>
+                            <button>ver mas</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- ultimo div de la carta donde aparece el precio en un cuadro gris -->
+                <div class="card-footer">
+                    <small class="text-muted">precio de la prenda</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre de la prenda</h5>
+                    <p class="card-text">
+                        <div class="container">
+                            <button>compra rapida</button>
+                            <button>ver mas</button>
+                    </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">precio de la prenda</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre de la prenda</h5>
+                    <p class="card-text">
+                        <div class="container">
+                            <button>compra rapida</button>
+                            <button>ver mas</button>
+                    </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">precio de la prenda</small>
+                </div>
+            </div>
+        </div>
+        <h5>ver mas</h5>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- segundo contenedor de cartas que muestran unos productos especificos -->
+
+    <!-- contenedor, centra todo lo que tiene dentro y deja una margen con los cordes de la pantalla -->
+    <div class="container">
+        <h5>Mujeres</h5>
+        <!-- grupo de 3 cartas por linea -->
+        <div class="card-group">
+            <!-- cartas individuales -->
+            <div class="card">
+                <!-- imagen -->
+                <img src="..." class="card-img-top" alt="...">
+                <!-- separador entre imagen y nombre del producto -->
+                <div class="card-body">
+                    <!-- nombre del producto -->
+                    <h5 class="card-title">Nombre de la prenda</h5>
+                    <!-- separador entre el nombre y los botones -->
+                    <div class="container">
+                        <p class="card-text">
+                            <!-- botones -->
+                            <button>compra rapida</button>
+                            <button>ver mas</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- ultimo div de la carta donde aparece el precio en un cuadro gris -->
+                <div class="card-footer">
+                    <small class="text-muted">precio de la prenda</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre de la prenda</h5>
+                    <p class="card-text">
+                        <div class="container">
+                            <button>compra rapida</button>
+                            <button>ver mas</button>
+                    </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">precio de la prenda</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre de la prenda</h5>
+                    <p class="card-text">
+                        <div class="container">
+                            <button>compra rapida</button>
+                            <button>ver mas</button>
+                    </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">precio de la prenda</small>
+                </div>
+            </div>
+        </div>
+        <h5>ver mas</h5>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- tercer contenedor de cartas que muestran unos productos especificos -->
+
+    <!-- contenedor, centra todo lo que tiene dentro y deja una margen con los cordes de la pantalla -->
+    <div class="container">
+        <h5>Hombres</h5>
+        <!-- grupo de 3 cartas por linea -->
+        <div class="card-group">
+            <!-- cartas individuales -->
+            <div class="card">
+                <!-- imagen -->
+                <img src="..." class="card-img-top" alt="...">
+                <!-- separador entre imagen y nombre del producto -->
+                <div class="card-body">
+                    <!-- nombre del producto -->
+                    <h5 class="card-title">Nombre de la prenda</h5>
+                    <!-- separador entre el nombre y los botones -->
+                    <div class="container">
+                        <p class="card-text">
+                            <!-- botones -->
+                            <button>compra rapida</button>
+                            <button>ver mas</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- ultimo div de la carta donde aparece el precio en un cuadro gris -->
+                <div class="card-footer">
+                    <small class="text-muted">precio de la prenda</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre de la prenda</h5>
+                    <p class="card-text">
+                        <div class="container">
+                            <button>compra rapida</button>
+                            <button>ver mas</button>
+                    </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">precio de la prenda</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre de la prenda</h5>
+                    <p class="card-text">
+                        <div class="container">
+                            <button>compra rapida</button>
+                            <button>ver mas</button>
+                    </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">precio de la prenda</small>
+                </div>
+            </div>
+        </div>
+        <h5>ver mas</h5>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- pie de pagina o footer -->
+
+    <footer>
+        <p>footer - pie de pagina</p>
+        <h1>holas</h1>
+        <h2>no se</h2>
+        <h3>ya no se que poner</h3>
+    </footer>
+
+</body>
+
+</html>
