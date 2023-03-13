@@ -68,11 +68,11 @@
                 <ul class="nav justify-content-end">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">iniciar sesion</a>
+                        <a class="nav-link" href="login.php">INICIAR SESION</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="register_user_dise.html">registrar</a>
+                        <a class="nav-link" href="register_user_dise.html">REGISTRAR</a>
                     </li>
 
                     <li class="nav-item">
@@ -107,25 +107,23 @@
 		<div class="container h-100">
 			<div class="row justify-content-sm-center h-100">
 				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
-					<div class="text-center my-5">
-						<img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="logo" width="100">
-					</div>
+					<br><br>
 					<div class="card shadow-lg">
 						<div class="card-body p-5">
 							<h1 class="fs-4 card-title fw-bold mb-4">REGISTRAR</h1>
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off"> 
                                 <!-- CASILLA DE NOMBRE-->
 								<div class="mb-3">
-									<label class="mb-2 text-muted" for="name">NOMBRE</label>
-									<input id="name" type="text" class="form-control" name="nombre" value="" required autofocus>
+									<label class="mb-2 text-muted" for="name">NOMBRES</label>
+									<input id="name" type="text" class="form-control" name="nombre_d" value="" required autofocus>
 									<div class="invalid-feedback">
 									</div>
 								</div>
 
                                 <!-- CASILLA DE APELLIDOS-->
 								<div class="mb-3">
-									<label class="mb-2 text-muted" for="name">APELLIDO</label>
-									<input id="name" type="text" class="form-control" name="apellido" value="" required autofocus>
+									<label class="mb-2 text-muted" for="name">APELLIDOS</label>
+									<input id="name" type="text" class="form-control" name="apellido_d" value="" required autofocus>
 									<div class="invalid-feedback">
 									</div>
 								</div>
@@ -133,7 +131,15 @@
                                  <!-- CASILLA DE NUMERO DE TELEFONO-->
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="name">NUMERO DE TELEFONO</label>
-									<input id="name" type="number" class="form-control" name="numero_telefono" value="" required autofocus>
+									<input id="name" type="tel" class="form-control" name="telefono_d" value="" required autofocus maxlength="11">
+									<div class="invalid-feedback">
+									</div>
+								</div>
+
+                                 <!-- CASILLA DE NUMERO DE CELULAR-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="name">NUMERO DE CELULAR</label>
+									<input id="name" type="tel" class="form-control" name="celular_d" value="" required autofocus maxlength="11">
 									<div class="invalid-feedback">
 									</div>
 								</div>
@@ -141,50 +147,87 @@
                                 <!-- CASILLA DE TIPO DE DOCUMENTO-->
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="name">TIPO DE DOCUMENTO</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" name="tipo_documento_d">
                                         <option selected>SELECCIONE UNO</option>
-                                        <option value="1">CEDULA</option>
-                                        <option value="2">TARJETA DE INDENTIDAD</option>
-                                        <option value="3">CEDULA DE EXTRAJERIA</option>
+                                        <option value="cc">CEDULA</option>
+                                        <option value="ce">CEDULA DE EXTRAJERIA</option>
                                       </select>
 									<div class="invalid-feedback">
 									</div>
 								</div>
+
                                  <!-- CASILLA DE NUMERO DE DOCUMENTO-->
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="name">NUMERO DE DOCUMENTO</label>
-									<input id="name" type="number" class="form-control" name="numero_de_documento" value="" required autofocus>
+									<input id="name" type="number" class="form-control" name="documento_d" value="" required autofocus>
 									<div class="invalid-feedback">
 									</div>
 								</div>
 
-                                  <!--CASILLA DE DIRECCION-->
-								<div class="mb-3">
+                                 <!-- CASILLA DE NUMERO DE DOCUMENTO-->
+                                <div class="mb-3">
 									<label class="mb-2 text-muted" for="email">DIRECCION</label>
-									<input id="text" type="email" class="form-control" name="direccion" value="" required>
+									<input id="text" type="text" class="form-control" name="direccion_d" value="" required>
                                     <div class="invalid-feedback">
 										
 									</div>
 								</div>
-                                
 
-                        
-                                <!--CASILLA DE CORREO ELECTRONICO-->
+
+                                  <!--CASILLA DE FECHA DE NACIMIENTO-->
 								<div class="mb-3">
-									<label class="mb-2 text-muted" for="email">CORREO ELECTRONICO--</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required>
-									<div class="invalid-feedback">
-										Email is invalid
+									<label class="mb-2 text-muted" for="email">FECHA DE NACIMIENTO</label>
+									<input id="text" type="date" class="form-control" name="fecha_naci_d" value="" required>
+                                    <div class="invalid-feedback">
+										
 									</div>
 								</div>
-                                <!--CASILLA DE CONTRASEÑA-->
+                        
+                                 <!--CASILLA DE CORREO ELECTRONICO-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="email">CORREO ELECTRONICO</label>
+									<input id="email" type="text" class="form-control" name="email_d" value="" required>
+									<div class="invalid-feedback">
+										el correo electrónico es invalido
+									</div>
+								</div>
+
+                                 <!--CASILLA DE CONTRASEÑA-->
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="password">CONTRASEÑA</label>
-									<input id="password" type="password" class="form-control" name="password" required>
+									<input id="password" type="password" class="form-control" name="password_d" required>
 								    <div class="invalid-feedback">
-								    	Password is required
+								    	se requiere contraseña
 							    	</div>
 								</div>
+
+                                 <!--CASILLA DE NOMBRE DE EMPRESA-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="password">NOMBRE DE EMPRESA</label>
+									<input id="password" type="text" class="form-control" name="nombre_empresa" required>
+								    <div class="invalid-feedback">
+								    	
+							    	</div>
+								</div>
+
+                                 <!--CASILLA DE CELULAR DE EMPRESA-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="password">CELULAR DE EMPRESA</label>
+									<input id="password" type="tel" class="form-control" name="celular_empresa" required>
+								    <div class="invalid-feedback">
+								    	
+							    	</div>
+								</div>
+
+                                 <!--CASILLA DE DIRECCION DE EMPRESA-->
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="password">DIRECCION DE EMPRESA</label>
+									<input id="password" type="text" class="form-control" name="direccion_empresa" required>
+								    <div class="invalid-feedback">
+								    	
+							    	</div>
+								</div>
+
                                  <!-- CASILLA DE GENEROS-->
                                  <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="hombre" value="option1">
@@ -199,12 +242,13 @@
                                     <label class="form-check-label" for="inlineCheckbox3">OTROS</label>
                                   </div>
 
+
 								<p class="form-text text-muted mb-3">
 									
 								</p>
 
 								<div class="align-items-center d-flex">
-									<button type="submit" class="btn btn-primary ms-auto">
+									<button name="register" type="submit" class="btn btn-primary ms-auto">
 										REGISTRAR	
 									</button>
 								</div>
@@ -212,7 +256,7 @@
 						</div>
 						<div class="card-footer py-3 border-0">
 							<div class="text-center">
-								YA TIENE CUENTA? <a href="index.html" class="text-dark">INICIAR SESION</a>
+								YA TIENE CUENTA? <a href="login.php" class="text-dark">INICIAR SESION</a>
 							</div>
 						</div>
 					</div>
@@ -226,3 +270,96 @@
 </body>
 
 </html>
+
+<?PHP
+
+
+if ($_POST){
+   $error_encontrado="";
+   if (validar_clave($_POST["password_d"], $error_encontrado)){
+      echo "CLAVE VÁLIDA";
+include("codigoPHP/conexion.php");
+      
+
+if (isset($_POST['register'])) {
+    if (strlen($_POST['nombre_d']) >=1 &&
+    strlen($_POST['apellido_d']) >=1 &&
+    strlen($_POST['celular_d']) >=1 &&
+    strlen($_POST['telefono_d']) >=1 &&
+    strlen($_POST['tipo_documento_d']) >=1 &&
+    strlen($_POST['documento_d']) >=1 &&
+    strlen($_POST['fecha_naci_d']) >=1 &&
+    strlen($_POST['direccion_d']) >=1 &&
+    strlen($_POST['email_d']) >=1 &&
+    strlen($_POST['password_d']) >=1 &&
+    strlen($_POST['nombre_empresa']) >=1 &&
+    strlen($_POST['celular_empresa']) >=1 &&
+    strlen($_POST['direccion_empresa']) >=1){
+
+   $nombre_d = trim($_POST['nombre_d']);
+   $apellido_d = trim($_POST['apellido_d']);
+   $celular_d = trim($_POST['celular_d']);
+   $telefono_d = trim($_POST['telefono_d']);
+   $tipo_documento_d = trim($_POST['tipo_documento_d']);
+   $documento_d = trim($_POST['documento_d']);
+   $fecha_naci_d = trim($_POST['fecha_naci_d']);
+   $direccion_d = trim($_POST['direccion_d']);
+   $email_d = trim($_POST['email_d']);
+   $password_d = trim($_POST['password_d']);
+   $nombre_empresa = trim($_POST['nombre_empresa']);
+   $celular_empresa = trim($_POST['celular_empresa']);
+   $direccion_empresa = trim($_POST['direccion_empresa']);
+   
+   
+   $consulta = "INSERT INTO disenador(nombre_d, apellido_d, celular_d, telefono_d, tipo_documento_d, documento_d, fecha_naci_d, direccion_d, email_d, password_d, nombre_empresa, celular_empresa, direccion_empresa) 
+   VALUES ('$nombre_d','$apellido_d','$celular_d','$telefono_d','$tipo_documento_d','$documento_d','$fecha_naci_d','$direccion_d','$email_d','$password_d','$nombre_empresa','$celular_empresa','$direccion_empresa')";
+   $resultado = mysqli_query($conex,$consulta);
+     if ($resultado) {
+      ?>
+      <h3 class="ok">te has inscripto correctamente</h3>
+      <?php
+    }else{
+      ?>
+      <h3 class="bad">ha ocurrido un error</h3>
+      <?php
+    }
+
+  }else{
+    ?>
+    <h3 class="bad">porfavor complete los campos</h3>
+    <?php
+   }
+}
+
+   }else{
+      echo "PASSWORD NO VÁLIDO: " . $error_encontrado;
+   }
+}
+
+function validar_clave($password_d,&$error_clave){
+   if(strlen($password_d) < 6){
+      $error_clave = "La clave debe tener al menos 6 caracteres";
+      return false;
+   }
+   if(strlen($password_d) > 20){
+      $error_clave = "La clave no puede tener más de 16 caracteres";
+      return false;
+   }
+   if (!preg_match('`[a-z]`',$password_d)){
+      $error_clave = "La clave debe tener al menos una letra minúscula";
+      return false;
+   }
+   if (!preg_match('`[A-Z]`',$password_d)){
+      $error_clave = "La clave debe tener al menos una letra mayúscula";
+      return false;
+   }
+   if (!preg_match('`[0-9]`',$password_d)){
+      $error_clave = "La clave debe tener al menos un caracter numérico";
+      return false;
+   }
+   $error_clave = "";
+   return true;
+}
+
+
+?>

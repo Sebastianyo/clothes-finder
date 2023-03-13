@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,11 +72,11 @@
                 <ul class="nav justify-content-end">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">iniciar sesion</a>
+                        <a class="nav-link" href="login.php">INICIAR SESION</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="register_user_dise.html">registrar</a>
+                        <a class="nav-link" href="register.html">REGISTRAR</a>
                     </li>
 
                     <li class="nav-item">
@@ -108,48 +111,46 @@
 		<div class="container h-100">
 			<div class="row justify-content-sm-center h-100">
 				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
-					<div class="text-center my-5">
-						<img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="logo" width="100">
-					</div>
+                    <br><br>
 					<div class="card shadow-lg">
 						<div class="card-body p-5">
-							<h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
+							<h1 class="fs-4 card-title fw-bold mb-4">Acceso</h1>
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">
-									<label class="mb-2 text-muted" for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+									<label class="mb-2 text-muted" for="email">Dirección de correo electrónico</label>
+									<input id="email" type="email" class="form-control" name="email_l" value="" required autofocus>
 									<div class="invalid-feedback">
-										Email is invalid
+										el correo electrónico es invalido
 									</div>
 								</div>
 
 								<div class="mb-3">
 									<div class="mb-2 w-100">
-										<label class="text-muted" for="password">Password</label>
+										<label class="text-muted" for="password">Clave</label>
 										<a href="forgot.html" class="float-end">
-											Forgot Password?
+											Has olvidado tu contraseña?
 										</a>
 									</div>
-									<input id="password" type="password" class="form-control" name="password" required>
+									<input id="password" type="password" class="form-control" name="password_l" required>
 								    <div class="invalid-feedback">
-								    	Password is required
+								    	se requiere contraseña
 							    	</div>
 								</div>
 
 								<div class="d-flex align-items-center">
 									<div class="form-check">
 										<input type="checkbox" name="remember" id="remember" class="form-check-input">
-										<label for="remember" class="form-check-label">Remember Me</label>
+										<label for="remember" class="form-check-label">Recuérdame</label>
 									</div>
-									<button type="submit" class="btn btn-primary ms-auto">
-										Login
+									<button name="register" type="submit" class="btn btn-primary ms-auto">
+										Iniciar
 									</button>
 								</div>
 							</form>
 						</div>
 						<div class="card-footer py-3 border-0">
 							<div class="text-center">
-								Don't have an account? <a href="register.html" class="text-dark">Create One</a>
+								¿No tienes una cuenta? <a href="register.html" class="text-dark">Crea una</a>
 							</div>
 						</div>
 					</div>
@@ -164,3 +165,29 @@
 	<script src="js/login.js"></script>
 </body>
 </html>
+
+
+<?php
+
+include("codigoPHP/conexion.php");
+
+
+if (isset($_POST['register'])) {
+    if (strlen($_POST['password_l']) >=1 &&
+        strlen($_POST['email_l']) >=1){
+
+        $password_l = trim(($_POST['password_l']));
+        $email_l = trim($_POST['email_l']);
+            
+            
+        $consulta = mysqli_query($conex,"SELECT* FROM usuario WHERE email_u = '$email_l' and password_u = '$password_l'");
+        $resultado = $consulta->num_rows;
+            
+        if ($resultado!=0){
+            
+            echo "Bienvenido";
+        }else{
+            echo "no esta registrado";
+        }
+    }
+}

@@ -1,16 +1,16 @@
-<!-- <?php
+<?php
 
 //el nombre de la coneccion
-require_once 'conexion.php';
+require_once 'codigoPHP\conexion.php';
 
 //consultar por id
 if(isset($_GET[`accion`])){
     //primero buscamos ese registro con el id
         $id=$_GET[`id`];
-        $sql="insert into `productos` where id=$id;
+        $sql="insert into `productos` where id=$id";
         $datos=$con->query($sql);
         $campo=$datos->fetch_object();
-        //print_r($campo);
+        print_r($campo);
         $nombre=$campo->nombre;
         $precio=$campo->precio;
         $activo=$campo->activo;
@@ -18,7 +18,7 @@ if(isset($_GET[`accion`])){
 
 
 //guarda la informacion
-//print_r($_POST);
+print_r($_POST);
 if(isset($_POST[`accion`])){
     
     if($_post[`accion`]=="Guardar"){
@@ -51,13 +51,14 @@ if(isset($_POST[`accion`])){
         set `nombre` = `$nombre`,`precio` = `$precio`,`activo` = `$activo`
         where id=$id";
         $datos=$con->query($sql);
-        header("location:perfil_diseñador.php")
+        header("location:perfil_diseñador.php");
 
     }
 }
  
 
-?> -->
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -191,9 +192,10 @@ if(isset($_POST[`accion`])){
                     <div class="row">
                         <div class="col-sm-3">
                             <p class="mb-0">Nombre completo</p>
+                            
                         </div>
                         <div class="col-sm-9">
-                            <p class="text-muted mb-0">Johnatan Smith</p>
+                            <p class="text-muted mb-0"><a href="perfil.php?=nameuser=<?php echo $nombre ; ?> "></a></p>
                         </div>
                     </div>
                     <hr>
@@ -287,20 +289,20 @@ if(isset($_POST[`accion`])){
                     </thead>
                     <tbody>
 
-                        <!-- <?php
+                        <?php
                         
                         while($campo=$datos->fwtch_object()){
-                            ?> -->
+                            ?>
 
                             <tr class="">
                                 <td scope="row">111
-                                    <!-- <?php echo $campo->$id;?> -->
+                                    <?php echo $campo->$id;?>
                                 </td>
                                 <td>camisa azul
-                                    <!-- <?php echo $campo->$nombre-producto;?> -->
+                                    <?php echo $campo->$nombre-producto;?>
                                 </td>
                                 <td>40.000
-                                    <!-- $<?php echo number_format($campo->$precio-producto,0.",",".");?> -->
+                                    <?php echo number_format($campo->$precio-producto,"0".",",".");?>
                                 </td>
                                 <td>inactivo
 
